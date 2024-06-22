@@ -1,0 +1,51 @@
+body {
+  background-color: #B8D5DB;
+}
+
+#divGeneral {
+    margin: 1vh 0.5vw;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navegacion a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.acciones {
+  display: flex;
+}
+
+.botonHeader {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.botonHeader:hover {
+  background-color: #444;
+}
