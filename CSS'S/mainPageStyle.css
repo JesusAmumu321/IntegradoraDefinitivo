@@ -1,9 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 body {
-  background-color: #B8D5DB;
+  background-color: #b8d5db;
 }
 
 #divGeneral {
-    margin: 1vh 0.5vw;
+  margin: 1vh 0.5vw;
   background-color: #f1f1f1;
   padding: 10px;
 }
@@ -13,6 +16,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  background-color: #d9d9d9;
+  width: 100%;
 }
 
 .logo {
@@ -27,7 +32,6 @@ header {
 
 .navegacion a {
   color: #000;
-  text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
 }
@@ -35,7 +39,6 @@ header {
 .acciones {
   display: flex;
 }
-
 .botonHeader {
   background-color: #000;
   color: #fff;
@@ -45,7 +48,36 @@ header {
   margin-left: 10px;
   cursor: pointer;
 }
-
 .botonHeader:hover {
   background-color: #444;
+}
+
+
+.carrusel{
+  width: 100vh;
+  max-width: 120em;
+  background-color: #b32020;
+}
+
+.carrusel .grande{
+    width: 400vh;
+    background-color: orange;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.carrusel .aquiGif{
+  width: calc(100 / 4);
+   background-color: lime;
+}
+.carrusel .puntos{
+  width: 100%;
+  background-color: red;
+  padding: 1em;
+}
+.carrusel .punto{
+  width: 1;
+  height: 1em;
+  background-color: blue;
 }
