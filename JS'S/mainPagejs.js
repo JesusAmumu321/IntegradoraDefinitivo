@@ -50,10 +50,10 @@ document.addEventListener('DOMContentLoaded', () => {
     despuesBtn.addEventListener('click', siguienteItem);
     antBtn.addEventListener('click', itemAnterior);
 
-    // Cambiar automáticamente cada 5 segundos
+    // cambia el carrusel cada 5 segs
     const intervalo = setInterval(siguienteItem, 5000);
 
 
-    // Mostrar el primer texto al cargar
+    // muestra el primer item al mero chingaso de carga de la pagina
     mostrarItem(0);
 });
