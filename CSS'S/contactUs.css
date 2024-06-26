@@ -1,0 +1,101 @@
+body{
+    background: #b8d5db;
+
+}
+.Form{
+    display: flex;
+    background-color:#ECECEC;
+    flex-direction: column;
+    border: .5px solid rgb(67, 67, 129);
+    margin-left: 50%;
+    margin-right: 7%;
+    border-radius: 1%;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 6%;
+    height:80dvh;
+    width: 40%;
+    border-color: #ECECEC;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 9%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.uss{
+height: 15%;
+border-color: #fbfbfb;
+border: 1px;
+border-radius: 6px  ;
+}
+.detalle{
+    height: 130px;
+    resize: none;
+    border-radius: 9px;
+    border-color: #fbfbfb;
+}
+
+button {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+    font-size: 10px;
+    padding: 1em 2.7em;
+    font-weight: 500;
+    background: #1f2937;
+    color: white;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.6em;
+    cursor: pointer;
+    margin-left: 70%;
+}
+
+.gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0.6em;
+    margin-top: -0.25em;
+    background-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+    );
+}
+
+.label {
+    position: relative;
+    top: -1px;
+}
+.ubi{
+    width: 100%;
+    font-size: 40px;
+}
+
+.transition {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 500ms;
+    background-color: rgba(73, 77, 194, 0.6);
+    border-radius: 9999px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button:hover .transition {
+    width: 14em;
+    height: 14em;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+    
