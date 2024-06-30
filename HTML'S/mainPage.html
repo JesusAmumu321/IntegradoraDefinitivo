@@ -1,56 +1,90 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ES" class="h-full">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Med & Track</title>
-    <link rel="stylesheet" href="/CSS'S/mainPageStyle.css">
-    <script src="/JS'S/mainPagejs.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Med & Track</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          backgroundColor: {
+            'bg-personalizado': '#b8d5db',
+            'hd-personalizado': '#d9d9d9',
+          }
+        }
+      }
+    }
+  </script>
+  <script src="/JS'S/mainPagejs.js"></script>
+  <link rel="stylesheet" href="/CSS'S/mainPageStyle.css">
 </head>
 
-<body>
-    <div id="divGeneral">
-        <header>
-            <div class="logo">
-                <img src="/assets/LOGO MED&TRACK NO OFICIAL.jpg" alt="logo">
-                <h1>Med & Track</h1>
-            </div>
-            <nav class="navegacion">
-                <a href="#">Contáctanos</a>
-                <a href="#">UTCH</a>
-            </nav>
-            <div class="acciones">
-                <a href="https://google.com">
-                    <button class="botonHeader">Registrarse</button>
-                </a>
-                <a href="http://tinder.com">
-                    <button class="botonHeader">Inicie sesión</button>
-                </a>
-            </div>
-        </header>
+<body class="h-full m-0 p-0 bg-bg-personalizado flex justify-center items-center overflow-hidden">
+  <div id="divGeneral"
+    class="relative w-[98vw] min-h-[96vh] flex flex-col my-[2vh] mx-auto bg-gray-100 p-2.5 box-border">
+    <header class="flex items-center p-4 bg-hd-personalizado w-full box-border relative top-0 left-0 h-24">
 
-        <section class="seccionBody">
-            <div class="texto">
-                <p id="textoCarrusel"></p> <!-- Aquí se pone el texto del carrusel -->
-                <a href="http://google.com">
-                    <button id="botonSesion">Inicie Sesión</button>
-                </a>
-                
-            </div>
-            <div class="carrusel">
-                <div class="carrusel-items">
-                    <div class="carrusel-item active"></div>
-                    <div class="carrusel-item"></div>
-                    <div class="carrusel-item"></div>
-                    <div class="carrusel-item"></div>
-                </div>
-                
-                <button class="carrusel-antes">antes</button>
-                <button class="carrusel-despues">despues</button>
-            </div>
-        </section>
-    </div>
+      <div class="logo flex items-center flex-grow">
+        <img src="/assets/LOGO MED&TRACK NO OFICIAL.jpg" alt="logo" class="h-12 mr-4">
+        <h1 class="text-m font-bold">Med & Track</h1>
+      </div>
+
+      <nav class="navegacion mr-12">
+        <a href="https://www.tinder.com" class="text-black mx-4 font-medium text-m">Contáctanos</a>
+        <a href="https://www.x.com" class="text-black mx-4 font-medium text-m">UTCH</a>
+      </nav>
+
+      <div class="acciones flex"> <!-- botones registrate y header-->
+        <button
+          class="bg-black text-white rounded-r-lg rounded-full py-2 px-6 ml-4 cursor-pointer hover:bg-gray-700 text-m">Registrate</button>
+
+        <button
+          class="bg-black text-white rounded-l-lg rounded-full py-2 px-6 ml-4 cursor-pointer hover:bg-zinc-400 text-m">Inicia
+          sesión</button>
+
+      </div> <!-- botones registrate y header-->
+    </header>
+
+    <section class="flex-1 flex justify-between items-center p-5 bg-white"> <!-- items carrusel-->
+
+      <div class="flex-1 flex flex-col justify-center items-start pr-5">
+        <p id="textoCarrusel" class="text-2xl font-normal mb-5 animation-fade"></p>
+        <button id="botonSesion" class="bg-black text-white rounded-md py-2 px-4 cursor-pointer hover:bg-gray-700">Learn
+          More</button>
+      </div>
+
+      <div class="flex-1 relative overflow-hidden h-[300px]">
+
+        <div class="relative h-full w-full">
+          <div
+            class="carrusel-item absolute top-0 left-0 w-full h-full flex justify-center items-center text-2xl bg-gray-200 transition-opacity duration-500 opacity-0 pointer-events-none bg-cover bg-center">
+          </div>
+          <div
+            class="carrusel-item absolute top-0 left-0 w-full h-full flex justify-center items-center text-2xl bg-gray-200 transition-opacity duration-500 opacity-0 pointer-events-none bg-cover bg-center">
+          </div>
+          <div
+            class="carrusel-item absolute top-0 left-0 w-full h-full flex justify-center items-center text-2xl bg-gray-200 transition-opacity duration-500 opacity-0 pointer-events-none bg-cover bg-center">
+          </div>
+          <div
+            class="carrusel-item absolute top-0 left-0 w-full h-full flex justify-center items-center text-2xl bg-gray-200 transition-opacity duration-500 opacity-0 pointer-events-none bg-cover bg-center">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="absolute bottom-5 left-5 flex gap-2.5">
+        <button class="botonInferior w-3.5 h-3.5 rounded-full bg-gray-300 cursor-default"></button>
+        <button class="botonInferior w-3.5 h-3.5 rounded-full bg-gray-300 cursor-default"></button>
+        <button class="botonInferior w-3.5 h-3.5 rounded-full bg-gray-300 cursor-default"></button>
+        <button class="botonInferior w-3.5 h-3.5 rounded-full bg-gray-300 cursor-default"></button>
+      </div>
+
+    </section> <!-- items carrusel-->
+
+  </div>
 </body>
 
 </html>
