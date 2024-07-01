@@ -26,6 +26,7 @@ pool.getConnection((err, connection) => {
   connection.release();
 });
 
+//ejemplo, se supone que si furulais
 app.get('/HTML/registro.html', (req, res) => {
     console.log('Se ha hecho una solicitud a /HTML/registro.html');
 });
