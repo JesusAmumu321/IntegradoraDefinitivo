@@ -26,6 +26,10 @@ pool.getConnection((err, connection) => {
   connection.release();
 });
 
+app.get('/HTML/registro.html', (req, res) => {
+
+});
+
 // Ejemplo de ruta que usa la conexión a MySQL
 app.get('/usuarios', (req, res) => {
   pool.query('SELECT * FROM usuarios', (error, results) => {
