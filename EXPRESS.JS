@@ -28,7 +28,8 @@ pool.getConnection((err, connection) => {
 
 //ejemplo, se supone que si furulais
 app.get('/HTML/registro.html', (req, res) => {
-    console.log('Se ha hecho una solicitud a /HTML/registro.html');
+
+    res.log('Se ha hecho una solicitud a /HTML/registro.html');
 });
 
 // Ejemplo de ruta que usa la conexión a MySQL
